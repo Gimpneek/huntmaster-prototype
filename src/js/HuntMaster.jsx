@@ -1,7 +1,7 @@
 import React from "react"
 import { render } from "react-dom"
 
-import HuntMasterApp from "./components/HuntMasterApp"
+import HuntMasterApp from "./HuntMasterApp"
 
 class HuntMaster extends React.Component {
     render(){

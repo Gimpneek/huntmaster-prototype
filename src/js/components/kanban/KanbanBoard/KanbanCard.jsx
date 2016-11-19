@@ -10,8 +10,8 @@ export default class KanbanCard extends React.Component{
                   <span>{this.props.company}</span>
                 </div>
                 <div className="ui list">
-                  <div className="item"><strong>Apply By:</strong> {this.props.date}</div>
-                  <div className="item"><strong>Tasks:</strong> {this.props.tasks}</div>
+                  <div className="item"><strong>Apply By:</strong> {this.props.actionDate}</div>
+                  <div className="item"><strong>Tasks:</strong> {this.props.tasksCompleted}/{this.props.tasksTotal}</div>
                   <div className="item"><strong>Attachments:</strong> {this.props.attachments}</div>
                 </div>
               </div>
