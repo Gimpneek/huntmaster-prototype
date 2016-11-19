@@ -11,6 +11,7 @@ export default class KanbanBoard extends React.Component{
                     <KanbanCard position="Programmer" company="Hooli" date="29/11/16" tasks="0/2" attachments="0"/>
                     <KanbanCard position="UX Designer" company="Evil Tech Corp" date="31/10/16" tasks="0/2" attachments="0"/>
                     <KanbanCard position="Tester" company="Startup" date="21/11/16" tasks="0/2" attachments="0"/>
+                    <button className="fluid bottom attached ui primary button">Add Application</button>
                 </KanbanColumn>
                 <KanbanColumn name="Awaiting Feedback"/>
                 <KanbanColumn name="Interview"/>
