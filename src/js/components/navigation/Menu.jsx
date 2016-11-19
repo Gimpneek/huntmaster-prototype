@@ -1,4 +1,5 @@
 import React from "react"
+import HamburgerMenu from "./HamburgerMenu"
 
 export default class Menu extends React.Component{
     render(){
@@ -9,7 +10,7 @@ export default class Menu extends React.Component{
                   <img src="/images/logo.png"/>
                     {this.props.user}
                 </div>
-                <div className="ui right item side-menu-button">Menu</div>
+                <HamburgerMenu/>
               </div>
             </div>
         )

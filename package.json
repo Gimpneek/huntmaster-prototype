@@ -32,6 +32,7 @@
     "react-redux": "^4.4.0",
     "redux": "^3.3.1",
     "redux-thunk": "^1.0.3",
-    "semantic-ui-react": "^0.61.1"
+    "semantic-ui-react": "^0.61.1",
+    "jquery": "^3.1.1"
   }
 }

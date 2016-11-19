@@ -7,7 +7,7 @@ module.exports = {
   entry: {
     // Add as many entry points as you have container-react-components here
     huntmaster: './src/js/HuntMaster',
-    vendors: ['react', 'semantic-ui-react']
+    vendors: ['react', 'semantic-ui-react', 'jquery', './src/vendor/js/semantic-ui/sidebar.js']
   },
 
   output: {

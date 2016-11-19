@@ -6,8 +6,9 @@ export default class HuntMasterApp extends React.Component{
     render(){
         return (
             <div>
-                <Navigation user="Joe Seeker"/>
-                <JobHuntingBoardPage/>
+                <Navigation user="Joe Seeker">
+                    <JobHuntingBoardPage/>
+                </Navigation>
             </div>
         )
     }
