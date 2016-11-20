@@ -6,7 +6,7 @@ export default class Navigation extends React.Component{
     render(){
         return (
             <div id="huntmaster-container">
-                <Menu user={this.props.user}/>
+                <Menu/>
                 <Sidebar/>
                 {this.props.children}
             </div>
