@@ -19,7 +19,7 @@ class CVStore extends EventEmitter {
                                 institution: 'Thames Valley University',
                                 startDate: '2006',
                                 endDate: '2009',
-                                stories: 10,
+                                stories: [1],
                                 activities: 5
                             }
                         ]
