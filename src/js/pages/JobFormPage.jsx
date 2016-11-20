@@ -4,9 +4,9 @@ import JobBoardStore from "../stores/JobBoardStore"
 import CVStore from "../stores/CVStore"
 import Form from "../components/form/Form"
 import TextInput from "../components/form/TextInput"
-import TextArea from "../components/form/TextArea"
 import Select from "../components/form/Select"
 import AttachmentListWithInput from "../components/form/AttachmentListWithInput"
+import TaskList from "../components/form/TaskList"
 
 export default class JobFormPage extends React.Component{
     constructor(props){
@@ -34,6 +34,7 @@ export default class JobFormPage extends React.Component{
                     <TextInput field="actionDate" label={stage.actionDateLabel} value={job.actionDate}/>
                     <Select field="cv" label="CV to use" value={job.cv} options={resumesAsOptions}/>
                     <AttachmentListWithInput field="attachments" label="Attachments" value={job.attachments}/>
+                    <TaskList field="tasks" label="Tasks" value={job.tasks}/>
                 </Form>
             </Main>
         )

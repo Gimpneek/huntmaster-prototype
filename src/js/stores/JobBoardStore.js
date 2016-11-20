@@ -15,8 +15,16 @@ class JobBoardStore extends EventEmitter{
                         position: "Developer",
                         company: "ACME Inc.",
                         actionDate: "30/11/16",
-                        tasksCompleted: 1,
-                        tasksTotal: 2,
+                        tasks: [
+                            {
+                                id: 1,
+                                completed: true
+                            },
+                            {
+                                id: 2,
+                                completed: false
+                            }
+                        ],
                         attachments: [1],
                         cv: 1
                     },
@@ -25,8 +33,7 @@ class JobBoardStore extends EventEmitter{
                         position: "Programmer",
                         company: "Hooli",
                         actionDate: "31/12/16",
-                        tasksCompleted: 0,
-                        tasksTotal: 2,
+                        tasks: [],
                         attachments: []
                     },
                     {
@@ -34,8 +41,7 @@ class JobBoardStore extends EventEmitter{
                         position: "UX Designer",
                         company: "Evil Tech Corp",
                         actionDate: "31/10/16",
-                        tasksCompleted: 0,
-                        tasksTotal: 2,
+                        tasks: [],
                         attachments: []
                     },
                     {
@@ -43,8 +49,7 @@ class JobBoardStore extends EventEmitter{
                         position: "Tester",
                         company: "Startup",
                         actionDate: "21/11/16",
-                        tasksCompleted: 0,
-                        tasksTotal: 2,
+                        tasks: [],
                         attachments: []
                     }
                 ]
@@ -88,8 +93,7 @@ class JobBoardStore extends EventEmitter{
                         position: "Product Owner",
                         company: "SoftMicro",
                         actionDate: "1/11/16",
-                        tasksCompleted: 1,
-                        tasksTotal: 2,
+                        tasks: [],
                         attachments: [1]
                     }
                 ]
