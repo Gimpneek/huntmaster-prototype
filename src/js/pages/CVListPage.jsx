@@ -13,7 +13,8 @@ export default class CVListPage extends React.Component{
     render(){
         const { resumes } = this.state;
         const CVListItems = resumes.map((cv, i) => {
-           return <ListItem link="/cvs" name={cv.title} key={i}/>
+            const cvURL = "/resumes/" + cv.id;
+           return <ListItem link={cvURL} name={cv.title} key={i}/>
         });
         return(
             <Main>

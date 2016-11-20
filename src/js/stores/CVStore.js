@@ -11,17 +11,30 @@ class CVStore extends EventEmitter {
                     {
                         id: 1,
                         title: 'Education',
-                        entries: []
+                        processStart: false,
+                        items: [
+                            {
+                                id: 1,
+                                title: 'BA (Hons) Digital Art',
+                                institution: 'Thames Valley University',
+                                startDate: '2006',
+                                endDate: '2009',
+                                stories: 10,
+                                activities: 5
+                            }
+                        ]
                     },
                     {
                         id: 2,
                         title: 'Experience',
-                        entries: []
+                        processStart: false,
+                        items: []
                     },
                     {
                         id: 3,
                         title: 'Skills',
-                        entries: []
+                        processStart: false,
+                        items: []
                     }
                 ]
             }
@@ -30,6 +43,15 @@ class CVStore extends EventEmitter {
 
     getCVs(){
         return this.resumes;
+    }
+
+    getCV(CVID){
+        const cv =  this.resumes.map((cv, i) => {
+                if(cv.id == parseInt(CVID)){
+                    return cv;
+                }
+            });
+        return cv ? cv[0] : {};
     }
 }
 

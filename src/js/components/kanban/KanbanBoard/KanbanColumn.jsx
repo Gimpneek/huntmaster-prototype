@@ -1,12 +1,25 @@
 import React from "react"
-import KanbanCard from "./KanbanCard"
+import JobKanbanCard from "./JobKanbanCard"
+import CVKanbanCard from "./CVKanbanCard"
 
 export default class KanbanColumn extends React.Component{
     render(){
         const { processStart } = this.props;
         const { cards } = this.props;
+        const { boardType } = this.props;
         const CardList = cards.map((card, i) => {
-            return <KanbanCard
+            if(boardType == "CV"){
+                return <CVKanbanCard
+                        title={card.title}
+                        institution={card.institution}
+                        startDate={card.startDate}
+                        endDate={card.endDate}
+                        stories={card.stories}
+                        activities={card.activities}
+                    />
+
+            }else{
+                return <JobKanbanCard
                 position={card.position}
                 company={card.company}
                 actionDate={card.actionDate}
@@ -15,6 +28,7 @@ export default class KanbanColumn extends React.Component{
                 attachments={card.attachments}
                 key={i}
             />
+            }
         });
 
         return (
