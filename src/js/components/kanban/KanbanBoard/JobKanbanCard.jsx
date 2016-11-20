@@ -1,9 +1,11 @@
 import React from "react"
+import { Link } from "react-router"
 
 export default class JobKanbanCard extends React.Component{
     render(){
+        const jobURL = "/jobs/" + this.props.stageID + "/" + this.props.jobID;
         return (
-            <div className="ui card">
+            <Link to={jobURL} className="ui card">
               <div className="content">
                 <div className="header">{this.props.position}</div>
                 <div className="meta">
@@ -15,7 +17,7 @@ export default class JobKanbanCard extends React.Component{
                   <div className="item"><strong>Attachments:</strong> {this.props.attachments}</div>
                 </div>
               </div>
-            </div>
+            </Link>
         )
     }
 }

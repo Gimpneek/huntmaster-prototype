@@ -46,12 +46,12 @@ class CVStore extends EventEmitter {
     }
 
     getCV(CVID){
-        const cv =  this.resumes.map((cv, i) => {
+        const cv =  this.resumes.filter((cv, i) => {
                 if(cv.id == parseInt(CVID)){
                     return cv;
                 }
             });
-        return cv ? cv[0] : {};
+        return (cv.length > 0) ? cv[0] : {};
     }
 }
 

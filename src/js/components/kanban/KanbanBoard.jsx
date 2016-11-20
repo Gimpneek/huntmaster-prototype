@@ -15,6 +15,7 @@ export default class KanbanBoard extends React.Component{
                 cards={cards}
                 processStart={processStart}
                 boardType={boardType}
+                stageID={stage.id}
             />;
         });
         return (

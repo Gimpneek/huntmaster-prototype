@@ -20,12 +20,12 @@ class StoryStore extends EventEmitter {
     }
 
     getStory(storyID){
-        const story =  this.stories.map((story, i) => {
+        const story =  this.stories.filter((story, i) => {
                 if(story.id == parseInt(storyID)){
                     return story;
                 }
             });
-        return story ? story[0] : {};
+        return (story.length > 0) ? story[0] : {};
     }
 
     getStories(){

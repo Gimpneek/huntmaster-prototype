@@ -7,6 +7,7 @@ export default class KanbanColumn extends React.Component{
         const { processStart } = this.props;
         const { cards } = this.props;
         const { boardType } = this.props;
+        const { stageID } = this.props;
         const CardList = cards.map((card, i) => {
             if(boardType == "CV"){
                 return <CVKanbanCard
@@ -27,6 +28,8 @@ export default class KanbanColumn extends React.Component{
                 tasksTotal={card.tasksTotal}
                 attachments={card.attachments}
                 key={i}
+                jobID={card.id}
+                stageID={stageID}
             />
             }
         });
