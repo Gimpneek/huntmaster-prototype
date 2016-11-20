@@ -6,6 +6,7 @@ import Form from "../components/form/Form"
 import TextInput from "../components/form/TextInput"
 import TextArea from "../components/form/TextArea"
 import MultiSelect from "../components/form/MultiSelect"
+import ActivityListWithInput from "../components/form/ActivityListWithInput"
 
 export default class CVFormPage extends React.Component{
     constructor(props){
@@ -34,6 +35,7 @@ export default class CVFormPage extends React.Component{
                     <TextInput field="startDate" label="Start Date" value={entry.startDate}/>
                     <TextInput field="endDate" label="End Date" value={entry.endDate}/>
                     <MultiSelect field="stories" label="Stories included in entry" placeholder="Tell the story of what you did" options={storyOptions} value={entry.stories}/>
+                    <ActivityListWithInput field="activities" label="Activities included in entry" placeholder="A list of activities you did" value={entry.activities}/>
                 </Form>
             </Main>
         )

@@ -20,7 +20,7 @@ class CVStore extends EventEmitter {
                                 startDate: '2006',
                                 endDate: '2009',
                                 stories: [1],
-                                activities: 5
+                                activities: [1,2]
                             }
                         ]
                     },
