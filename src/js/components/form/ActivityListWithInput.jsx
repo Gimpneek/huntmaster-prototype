@@ -59,7 +59,7 @@ export default class ActivityListWithInput extends React.Component{
                 <div className="ui segments">
                     {selectedActivities}
                 </div>
-                <Dropdown name={this.props.field} options={availableActivities} onAddItem={this.handleAddition} onChange={this.handleChange} search selection allowAdditions/>
+                <Dropdown name={this.props.field} options={availableActivities} onAddItem={this.handleAddition} onChange={this.handleChange} placeholder="Search for activities or create a new one" search selection allowAdditions/>
             </div>
         )
     }
