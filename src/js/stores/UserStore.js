@@ -4,13 +4,13 @@ class UserStore extends EventEmitter {
     constructor() {
         super();
         this.user = {
-            title: "Mr",
+            title: "mr",
             firstName: "Joe",
             lastName: "Seeker",
             email: "jseeker@email.com",
             phone: "071234123412",
             profilePicture: "blah",
-            induction: "Disciplined Software Development Manager and Developer with a passion for delivering high quality and valuable software."
+            introduction: "Disciplined Software Development Manager and Developer with a passion for delivering high quality and valuable software."
         }
     }
 
