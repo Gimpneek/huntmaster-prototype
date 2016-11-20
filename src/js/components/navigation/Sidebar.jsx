@@ -19,8 +19,6 @@ export default class Sidebar extends React.Component {
                 <Link className="item" to="/resumes">My CVs</Link>
                 <Link className="item" to="/stories">My Stories</Link>
                 <Link className="item" to="/profile">User Profile</Link>
-                <a className="item">Application Archive</a>
-                <a className="item">Job Board Settings</a>
                 <a className="item">Settings</a>
             </div>
         )

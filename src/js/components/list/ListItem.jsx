@@ -1,10 +1,11 @@
 import React from "react"
+import { Link } from "react-router"
 
 export default class ListItem extends React.Component{
     render(){
         return(
           <div className="ui segment">
-              <p>{this.props.name}</p>
+              <Link to={this.props.link}>{this.props.name}</Link>
           </div>
         )
     }

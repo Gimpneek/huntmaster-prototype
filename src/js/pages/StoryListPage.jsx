@@ -13,7 +13,8 @@ export default class StoryListPage extends React.Component{
     render(){
         const { stories } = this.state;
         const storyList = stories.map((story, i) => {
-           return <ListItem name={story.title} key={i}/>
+            const storyURL = "/stories/" + story.id;
+           return <ListItem name={story.title} key={i} link={storyURL} />
         });
         return(
             <Main>
