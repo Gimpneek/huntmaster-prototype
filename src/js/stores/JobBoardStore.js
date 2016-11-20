@@ -17,7 +17,8 @@ class JobBoardStore extends EventEmitter{
                         actionDate: "30/11/16",
                         tasksCompleted: 1,
                         tasksTotal: 2,
-                        attachments: 1
+                        attachments: [1],
+                        cv: 1
                     },
                     {
                         id: 2,
@@ -26,7 +27,7 @@ class JobBoardStore extends EventEmitter{
                         actionDate: "31/12/16",
                         tasksCompleted: 0,
                         tasksTotal: 2,
-                        attachments: 0
+                        attachments: []
                     },
                     {
                         id: 3,
@@ -35,7 +36,7 @@ class JobBoardStore extends EventEmitter{
                         actionDate: "31/10/16",
                         tasksCompleted: 0,
                         tasksTotal: 2,
-                        attachments: 0
+                        attachments: []
                     },
                     {
                         id: 4,
@@ -44,7 +45,7 @@ class JobBoardStore extends EventEmitter{
                         actionDate: "21/11/16",
                         tasksCompleted: 0,
                         tasksTotal: 2,
-                        attachments: 0
+                        attachments: []
                     }
                 ]
             },
@@ -89,7 +90,7 @@ class JobBoardStore extends EventEmitter{
                         actionDate: "1/11/16",
                         tasksCompleted: 1,
                         tasksTotal: 2,
-                        attachments: 4
+                        attachments: [1]
                     }
                 ]
             }
