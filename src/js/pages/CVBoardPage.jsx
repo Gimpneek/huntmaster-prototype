@@ -14,10 +14,11 @@ export default class CVBoardPage extends React.Component{
     render(){
         const { title } = this.state.cv;
         const { sections } = this.state.cv;
+        const { id } = this.state.cv;
         return(
             <Main>
                 <h1>{title}</h1>
-                <KanbanBoard stages={sections} boardType="CV"/>
+                <KanbanBoard stages={sections} boardType="CV" boardID={id}/>
             </Main>
         )
     }

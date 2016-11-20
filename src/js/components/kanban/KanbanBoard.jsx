@@ -5,6 +5,7 @@ export default class KanbanBoard extends React.Component{
     render(){
         const { stages } = this.props;
         const { boardType } = this.props;
+        const { boardID } = this.props;
         const StageColumns = stages.map((stage, i) => {
             const name = stage.title;
             const cards = stage.items;
@@ -16,6 +17,7 @@ export default class KanbanBoard extends React.Component{
                 processStart={processStart}
                 boardType={boardType}
                 stageID={stage.id}
+                boardID={boardID}
             />;
         });
         return (

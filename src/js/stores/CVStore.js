@@ -51,7 +51,35 @@ class CVStore extends EventEmitter {
                     return cv;
                 }
             });
-        return (cv.length > 0) ? cv[0] : {};
+        return (cv.length > 0) ? cv[0] : false;
+    }
+
+    getSection(CVID, sectionID){
+        const cv = this.getCV(CVID);
+        if(cv) {
+            const section = cv.sections.filter((section, i) => {
+                if(section.id == parseInt(sectionID)){
+                    return section;
+                }
+            });
+            return (section.length > 0) ? section[0] : false;
+        }else{
+            return false;
+        }
+    }
+
+    getEntry(CVID, sectionID, entryID){
+        const section = this.getSection(CVID, sectionID);
+        if(section){
+            const entry = section.items.filter((entry, i) => {
+                if(entry.id == parseInt(entryID)){
+                    return entry;
+                }
+            });
+            return (entry.length > 0) ? entry[0] : false;
+        }else{
+            return false;
+        }
     }
 }
 

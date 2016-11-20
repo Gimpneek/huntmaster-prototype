@@ -14,7 +14,7 @@ export default class JobHuntingBoardPage extends React.Component{
         const { stages } = this.state;
         return(
             <Main>
-                <KanbanBoard stages={stages} boardType="Job"/>
+                <KanbanBoard stages={stages} boardType="Job" boardID="1"/>
             </Main>
         )
     }
